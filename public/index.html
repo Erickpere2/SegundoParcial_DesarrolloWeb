@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parcial 2 Desarrollo Web</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+
+    <!-- nav bar-->
+    <nav class="navbar">
+      <img src="img/logo.png" class="logo" alt="" />
+      <div class="join-box">
+        <a href="Busqueda.html"><img src="img/buscar.JPG" width="110" height="50"></a>
+      </div>
+    </nav>
+      
+    <!-- SEccion principal-->
+    <header class="main">
+  
+        <!-- Tipos de Filtro -->
+    <select id="combo" onchange="Obtener()">
+      <option  value="Seleccione" >Seleccione</option>
+      <option  value="Todo">Todo</option>
+      <option  value="Genero">Genero</option>
+      <option  value="Año">Año</option>
+      <option  value="Clasificacion R">Clasificacion R</option>
+      <option  value="En Cines">En Cines</option>
+      <option  value="Para Adultos">Para Adultos</option>
+      <option  value="Series de TV">Series de TV</option>
+    </select>
+    <input class="btnf" type="button" value="Filtrar" onclick="check()">
+    <label id="checkgenero"></label>
+<label id="checkanio"></label>
+      <h1 class="heading">Pelis</h1>
+      <p class="info">
+        Las mejores pelis de la Red, series y cosas para quitar el tiempo,
+        todo esta aqui en Jutiapa
+      </p>
+<div id="main2"></div>
+<div id="FiltroGenero"></div>
+<div id="FiltroAnio"></div>
+<div id="FiltroClasificacion"></div>
+<div id="FiltroEnCines"></div>
+<div id="FiltroAdultos"></div>
+<div id="FiltroSeries"></div>
+      </header>
+      <!-- se hacen la referncia a los JS en este orden -->
+    <script src="js/api.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/scroll.js"></script>
+  </body>
+</html>
